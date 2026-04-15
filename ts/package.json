@@ -1,0 +1,24 @@
+{
+  "name": "cms-marketplace-ingesters",
+  "version": "1.0.0",
+  "description": "Bulk-download plugin/module artifacts from WordPress, Drupal, and Joomla",
+  "type": "module",
+  "scripts": {
+    "wordpress": "tsx src/wordpress/ingest.ts",
+    "drupal": "tsx src/drupal/ingest.ts",
+    "joomla": "tsx src/joomla/ingest.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^2.0.0"
+  }
+}
